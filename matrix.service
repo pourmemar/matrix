@@ -1,0 +1,13 @@
+[Unit]
+Description=matrix
+After=mysql.service
+
+[Service]
+ExecStart=/home/pi/Desktop/matrix/matrix  
+WorkingDirectory=/home/pi/Desktop/matrix/
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
